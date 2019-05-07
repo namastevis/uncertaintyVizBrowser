@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<!-- The head of the document -->
+	<head>
+		<title>UncertaintyViz Browser</title>
+		<meta charset="UTF-8" />
+		<link type="text/css" href="css/toggle-switch.css" rel="stylesheet">
+		<link type="text/css" href="uncertaintyviz.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="uncertaintyviz.js"></script>
+
+		<script>
+			$(function () {
+				timeviz();
+			});
+		</script>
+	</head>
+
+	<!-- The body of the document -->
+	<body>
+		<div>
+			<div class="header">
+				<h1>The UncertaintyViz Browser</h1>
+				<h2>A Survey of Uncertainty Visualization Research Papers.</h2>
+				<h3>by <a href="" target="_blank">Amit Jena</a>, Ph.D. Student</h3>
+				<h3>Supervised by
+					<a href="http://info-design-lab.github.io/" target="_blank">Prof. Venkatesh Rajamanickam</a>,
+					<a href="https://ialab.it.monash.edu/~dwyer/" target="_blank">Prof. Tim Dwyer</a>,
+					<a href="https://people.csiro.au/E/U/Ulrich-Engelke" target="_blank">Dr. Ulrich Engelke</a> And
+					<a href="https://people.csiro.au/P/C/Cecile-Paris" target="_blank">Dr. Cecile Paris.</a>
+				</h3>
+			</div>
+			<div class="content">
+				<div class="sidebar">
+					<div></div>
+					<div class="framed">
+						# of Research Papers: <span id="count" class="righty"></span>
+					</div>
+					<div class="framed">
+						<span>Search: <input type="text" id="search" /><img id="clear_search" src="pics/ico/clean.png" alt="Clear Search" /></span>
+					</div>
+
+					<div class="framed">
+						How to use filters:
+						<div style="padding-left: 1em;">
+							<div>
+								<img src="pics/ico/visible-gray.png" class="help-ico"/><span><b>Want:</b> Show me!</span>
+							</div>
+							<div>
+								<img src="pics/ico/invisible-gray.png" class="help-ico"/><span><b>Indifferent:</b> I don't care.</span>
+							</div>
+							<div>
+								<img src="pics/ico/hide-gray.png" class="help-ico"/><span><b>Hide:</b> I'm not interested!</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- !!! DO NOT EDIT BELOW ANY CHANGES WILL BE OVERWRITTEN !!! -->
+					<!-- FILTER START -->
+<div class="filter-group framed">
+Data
+	<div class="category framed">
+		<div class="category caption">Frame of Reference</div>
+		<div>
+			<div class="category label"><div class="c-icon c-abstract"></div>Abstract</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_abstract_want" name="abstract" type="radio">
+				<label for="swi_abstract_want" class="switch-icon want"></label>
+				<input id="swi_abstract_neutral" name="abstract" type="radio" checked>
+				<label for="swi_abstract_neutral" class="switch-icon neutral"></label>
+				<input id="swi_abstract_hide" name="abstract" type="radio">
+				<label for="swi_abstract_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+		<div>
+			<div class="category label"><div class="c-icon c-spatial"></div>Spatial</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_spatial_want" name="spatial" type="radio">
+				<label for="swi_spatial_want" class="switch-icon want"></label>
+				<input id="swi_spatial_neutral" name="spatial" type="radio" checked>
+				<label for="swi_spatial_neutral" class="switch-icon neutral"></label>
+				<input id="swi_spatial_hide" name="spatial" type="radio">
+				<label for="swi_spatial_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+	</div>
+	<div class="category framed">
+		<div class="category caption">Number of Variables</div>
+		<div>
+			<div class="category label"><div class="c-icon c-univariate"></div>Univariate</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_univariate_want" name="univariate" type="radio">
+				<label for="swi_univariate_want" class="switch-icon want"></label>
+				<input id="swi_univariate_neutral" name="univariate" type="radio" checked>
+				<label for="swi_univariate_neutral" class="switch-icon neutral"></label>
+				<input id="swi_univariate_hide" name="univariate" type="radio">
+				<label for="swi_univariate_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+		<div>
+			<div class="category label"><div class="c-icon c-multivariate"></div>Multivariate</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_multivariate_want" name="multivariate" type="radio">
+				<label for="swi_multivariate_want" class="switch-icon want"></label>
+				<input id="swi_multivariate_neutral" name="multivariate" type="radio" checked>
+				<label for="swi_multivariate_neutral" class="switch-icon neutral"></label>
+				<input id="swi_multivariate_hide" name="multivariate" type="radio">
+				<label for="swi_multivariate_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="filter-group framed">
+Time
+	<div class="category framed">
+		<div class="category caption">Arrangement</div>
+		<div>
+			<div class="category label"><div class="c-icon c-linear"></div>Linear</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_linear_want" name="linear" type="radio">
+				<label for="swi_linear_want" class="switch-icon want"></label>
+				<input id="swi_linear_neutral" name="linear" type="radio" checked>
+				<label for="swi_linear_neutral" class="switch-icon neutral"></label>
+				<input id="swi_linear_hide" name="linear" type="radio">
+				<label for="swi_linear_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+		<div>
+			<div class="category label"><div class="c-icon c-cyclic"></div>Cyclic</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_cyclic_want" name="cyclic" type="radio">
+				<label for="swi_cyclic_want" class="switch-icon want"></label>
+				<input id="swi_cyclic_neutral" name="cyclic" type="radio" checked>
+				<label for="swi_cyclic_neutral" class="switch-icon neutral"></label>
+				<input id="swi_cyclic_hide" name="cyclic" type="radio">
+				<label for="swi_cyclic_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+	</div>
+	<div class="category framed">
+		<div class="category caption">Time Primitives</div>
+		<div>
+			<div class="category label"><div class="c-icon c-instant"></div>Instant</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_instant_want" name="instant" type="radio">
+				<label for="swi_instant_want" class="switch-icon want"></label>
+				<input id="swi_instant_neutral" name="instant" type="radio" checked>
+				<label for="swi_instant_neutral" class="switch-icon neutral"></label>
+				<input id="swi_instant_hide" name="instant" type="radio">
+				<label for="swi_instant_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+		<div>
+			<div class="category label"><div class="c-icon c-interval"></div>Interval</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_interval_want" name="interval" type="radio">
+				<label for="swi_interval_want" class="switch-icon want"></label>
+				<input id="swi_interval_neutral" name="interval" type="radio" checked>
+				<label for="swi_interval_neutral" class="switch-icon neutral"></label>
+				<input id="swi_interval_hide" name="interval" type="radio">
+				<label for="swi_interval_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="filter-group framed">
+Visualization
+	<div class="category framed">
+		<div class="category caption">Mapping</div>
+		<div>
+			<div class="category label"><div class="c-icon c-static"></div>Static</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_static_want" name="static" type="radio">
+				<label for="swi_static_want" class="switch-icon want"></label>
+				<input id="swi_static_neutral" name="static" type="radio" checked>
+				<label for="swi_static_neutral" class="switch-icon neutral"></label>
+				<input id="swi_static_hide" name="static" type="radio">
+				<label for="swi_static_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+		<div>
+			<div class="category label"><div class="c-icon c-dynamic"></div>Dynamic</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_dynamic_want" name="dynamic" type="radio">
+				<label for="swi_dynamic_want" class="switch-icon want"></label>
+				<input id="swi_dynamic_neutral" name="dynamic" type="radio" checked>
+				<label for="swi_dynamic_neutral" class="switch-icon neutral"></label>
+				<input id="swi_dynamic_hide" name="dynamic" type="radio">
+				<label for="swi_dynamic_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+	</div>
+	<div class="category framed">
+		<div class="category caption">Dimensionality</div>
+		<div>
+			<div class="category label"><div class="c-icon c-2D"></div>2D</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_2D_want" name="2D" type="radio">
+				<label for="swi_2D_want" class="switch-icon want"></label>
+				<input id="swi_2D_neutral" name="2D" type="radio" checked>
+				<label for="swi_2D_neutral" class="switch-icon neutral"></label>
+				<input id="swi_2D_hide" name="2D" type="radio">
+				<label for="swi_2D_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+		<div>
+			<div class="category label"><div class="c-icon c-3D"></div>3D</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_3D_want" name="3D" type="radio">
+				<label for="swi_3D_want" class="switch-icon want"></label>
+				<input id="swi_3D_neutral" name="3D" type="radio" checked>
+				<label for="swi_3D_neutral" class="switch-icon neutral"></label>
+				<input id="swi_3D_hide" name="3D" type="radio">
+				<label for="swi_3D_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
+	</div>
+</div>
+					<!-- FILTER END -->
+					<!-- !!! YOU CAN EDIT FROM HERE ON !!! -->
+
+					<div class="framed centered">
+						<div>Contact:</div>
+						<div style="font-size: 14px;">
+							Want to add your technique?<br>
+							Want to suggest corrections?<br>
+							Want to send a comment?<br>
+							Please contact us:<br> <strong>amit [dot] jena [at] monash [dot] edu</strong>
+						</div>
+					</div>
+					<div class="framed centered">
+						<div>I am associated with:</div>
+						<div style="font-size: 14px;">
+							<a href="http://www.iitbmonash.org/" target="_blank">IITB-Monash Research Academy</a>, Mumbai, India.<br>
+							<a href="http://www.idc.iitb.ac.in/" target="_blank">IDC School of Design</a>, IIT Bombay, Mumbai, India.<br>
+							<a href="https://ialab.it.monash.edu/" target="_blank">Immersive Analytics Lab</a>, Monash University, Melbourne, Australia.<br>
+						</div>
+					</div>
+				</div>
+
+				<div id="thumbs">
+
+					<!-- !!! DO NOT EDIT BELOW ANY CHANGES WILL BE OVERWRITTEN !!! -->
+					<!-- THUMBS START -->
+<div class="tec" data-id="Testing popular visualization techniques for representing model uncertainty" data-categories="abstract|spatial|univariate|multivariate|linear|cyclic|instant|interval|static|dynamic|2D|3D">
+	<img class="thumb" src="pics/thumbs/download.png" alt="" />
+	<div class="tec-citation">
+		Aerts&#44; Jeroen CJH; Clarke&#44; Keith C &#x0026; Keuper&#44; Alex D.: "<a href="http://dx.doi.org/10.1559/152304003100011180" target="_blank">Testing popular visualization techniques for representing model uncertainty.</a>" Cartography and geographic information science 30.3 (2003): 249-261.
+	</div>
+	<div class="tec-source"></div>
+	<div class="tec-abstract">
+		Many land allocation issues, such as land-use planning, require input from extensive spatial databases and involve complex decision-making. Spatial decision support systems (SDSS) are designed to make these issues more transparent and to support the design and evaluation of land allocation alternatives. In this paper we analyze techniques for visualizing uncertainty of an urban growth model called SLEUTH, which is designed to aid decision-makers in the field of urban planning and fits into the computational framework of an SDSS. Two simple visualization techniques for portraying uncertainty-static comparison and toggling-are applied to SLEUTH results and rendered with different background information and color schemes. In order to evaluate the effectiveness of the two visualization techniques, a web-based survey was developed showing the visualizations along with questions about the usefulness of the two techniques. The web survey proved to be quickly accessible and easy to understand by the participants. Participants in the survey were mainly recruited among planners and decision-makers. They acknowledged the usefulness of portraying uncertainty for decision-making purposes. They slightly favored the static comparison technique over toggling. Both visualization techniques were applied to an urban growth case study for the greater Santa Barbara area in California, USA.
+	</div>
+</div>
+<div class="tec" data-id="Responding to the consequences of uncertainty in geographical data" data-categories="abstract|spatial|univariate|multivariate|linear|cyclic|instant|interval|static|dynamic|2D|3D">
+	<img class="thumb" src="pics/thumbs/download.png" alt="" />
+	<div class="tec-citation">
+		Agumya&#44; Aggrey &#x0026; Hunter&#44; Gary J.: "<a href="http://dx.doi.org/10.1080/13658810210137031" target="_blank">Responding to the consequences of uncertainty in geographical data.</a>" International Journal of Geographical Information Science 16.5 (2002): 405-417.
+	</div>
+	<div class="tec-source"></div>
+	<div class="tec-abstract">
+		The presence of uncertainty in geographical data has the potential to expose users to undesirable consequences in their decision making. Accordingly, our efforts to understand uncertainty seek to (a) avoid the use of data that are not suitable for their intended purpose (that is, data whose consequences are unacceptable), (b) to reduce any undesirable consequences to an acceptable level, and (c) to devise ways of living with undesirable data when the adverse consequences caused by poor data do not alter our ultimate decision choice. To assist this task, we propose an approach where the adverse consequences of uncertainty caused by the use of unsuitable geographical data are expressed in terms of risk. In this paper we first show that risk management offers geographical data users a range of options for responding to the adverse consequences of data uncertainty, and secondly we present and discuss the various risk response options.
+	</div>
+</div>
+<!-- <div class="tec" data-id="" data-categories="abstract|spatial|univariate|multivariate|linear|cyclic|instant|interval|static|dynamic|2D|3D">
+	<img class="thumb" src="pics/thumbs/download.png" alt="" />
+	<div class="tec-citation">
+		.: "<a href="" target="_blank"></a>"
+	</div>
+	<div class="tec-source"></div>
+	<div class="tec-abstract">
+
+	</div>
+</div> -->
+<!-- <div class="tec" data-id="" data-categories="abstract|spatial|univariate|multivariate|linear|cyclic|instant|interval|static|dynamic|2D|3D">
+	<img class="thumb" src="pics/thumbs/download.png" alt="" />
+	<div class="tec-citation">
+		.: "<a href="" target="_blank"></a>"
+	</div>
+	<div class="tec-source"></div>
+	<div class="tec-abstract">
+
+	</div>
+</div> -->
+
+					<!-- THUMBS END -->
+					<!-- !!! YOU CAN EDIT FROM HERE ON !!! -->
+
+				</div>
+			</div>
+
+			<div class="footer framed centered">
+				<p>Last update: June 13, 2019</p>
+				<p>The source code and the Browser is Hosted at <a href="https://github.com/amitjenaiitbm/uncertaintyVizBrowser"> Github</a>.</p>
+				<p>Browser UI design is inspired from <a href="http://vcg.informatik.uni-rostock.de/~ct/timeviz/timeviz.html?" target="_blank">The TimeViz Browser</a>.</p>
+				<p>This site uses <a href="http://jquery.com/" target="_blank">jQuery</a> and <a href="https://github.com/ghinda/css-toggle-switch" target="_blank">css-toggle-switch</a>. Icons used and adapted from <a href="https://icons8.com/" target="_blank">Icons8</a>. </p>
+			</div>
+
+			<div id="tooltip"></div>
+
+			<div id="detail">
+				<div class="detail-image">
+					<div id="detail_load_msg">Loading, please be patient...</div>
+					<img id="detail_img" src="" alt="" />
+					<img id="nav_close" class="nav-btn" src="pics/ico/close.png" alt="Close" />
+					<img id="nav_full" class="nav-btn" src="pics/ico/fullscreen.png" alt="Fullscreen" />
+					<img id="nav_prev" class="nav-btn" src="pics/ico/previous.png" alt="Previous" />
+					<img id="nav_next" class="nav-btn" src="pics/ico/next.png" alt="Next" />
+				</div>
+				<div class="detail-content">
+					<h1 id="detail_title"></h1>
+					<div id="detail_categories"></div>
+					<h3>
+						Image source: <span id="detail_source"></span>
+					</h3>
+					<h3>
+						<strong>Abstract:</strong> <p id="detail_text"></p>
+					</h3>
+				</div>
+				<div class="detail-refs">
+					<h2>Citation</h2>
+					<ul id="detail_refs">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
