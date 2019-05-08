@@ -13,8 +13,9 @@ function timeviz() {
     var $detail_title = $("#detail_title");
     var $detail_categories = $("#detail_categories");
     var $detail_source = $("#detail_source");
-    var $detail_text = $("#detail_text");
-    var $detail_refs = $("#detail_refs");
+    var $detail_abstract = $("#detail_abstract");
+    var $detail_keywords = $("#detail_keywords");
+    var $detail_cites = $("#detail_cites");
     var $detail_img = $("#detail_img");
     var $detail_load_msg = $("#detail_load_msg");
     var $close_detail = $("#nav_close");
@@ -225,7 +226,8 @@ function timeviz() {
 
         $detail_title.text($tec.attr("data-id")); // Set the title of the detail to "data-id"
         $detail_source.html($tec.children(".tec-source").text()); // Set the source information
-        $detail_text.html($tec.children(".tec-abstract").html()); // Set the text of the detail
+        $detail_abstract.html($tec.children(".tec-abstract").html()); // Set the abstract info of the detail
+        $detail_keywords.html($tec.children(".tec-keywords").html()); // Set the keywords of the detail
 
         // Add category icons to detail
         var cats = $tec.attr("data-categories").split('|'); // Split categories into an array
@@ -235,12 +237,12 @@ function timeviz() {
         }
         $detail_categories.html(icos);
 
-        $detail_refs.empty();  // Add references to detail
+        $detail_cites.empty();  // Add references to detail
         var refs = "";
         $tec.children(".tec-citation").each(function () {
             refs += ('<li>' + $(this).html() + '</li>');
         });
-        $detail_refs.html(refs);
+        $detail_cites.html(refs);
 
         $detail_load_msg.show(); // Show the loading message
 
