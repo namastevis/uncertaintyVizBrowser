@@ -4,7 +4,7 @@ function timeviz() {
     var f_show = {}; // Categories to showing
     var f_hide = {}; // Categories to hide
 
-    var categories = "abstract|spatial|univariate|multivariate|linear|cyclic|instant|interval|static|dynamic|2D|3D".split("|");
+    var categories = "journal|conference|poster|thesis|technicalReport|cartography|cognitivePsychology|healthAnalytics|humanFactors|decisionMaking|infoVis|sciVis|cyberSecurity|ubiquitousComputing|aviation|gis|medicalScience|manufacturing|astrophysics|urbanPlanning|management|transport|nonExpert|domainExpert|data|model|tool|technique|guideline|framework|taxonomy|survey".split("|");
 
     var $current_detail_tec;
 

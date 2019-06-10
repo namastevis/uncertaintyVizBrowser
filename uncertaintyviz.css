@@ -112,52 +112,132 @@ h3 a {
     height: 24px;
 }
 
-.c-icon.c-abstract {
-    background-image: url('pics/ico/abstract.png');
+.c-icon.c-journal {
+    background-image: url('pics/ico/journal.png');
 }
 
-.c-icon.c-spatial {
-    background-image: url('pics/ico/spatial.png');
+.c-icon.c-conference {
+    background-image: url('pics/ico/conference.png');
 }
 
-.c-icon.c-univariate {
-    background-image: url('pics/ico/univariate.png');
+.c-icon.c-poster {
+    background-image: url('pics/ico/poster.png');
 }
 
-.c-icon.c-multivariate {
-    background-image: url('pics/ico/multivariate.png');
+.c-icon.c-thesis {
+    background-image: url('pics/ico/thesis.png');
 }
 
-.c-icon.c-linear {
-    background-image: url('pics/ico/linear.png');
+.c-icon.c-technicalReport {
+    background-image: url('pics/ico/technicalReport.png');
 }
 
-.c-icon.c-cyclic {
-    background-image: url('pics/ico/cyclic.png');
+.c-icon.c-cartography {
+    background-image: url('pics/ico/cartography.png');
 }
 
-.c-icon.c-instant {
-    background-image: url('pics/ico/instant.png');
+.c-icon.c-cognitivePsychology {
+    background-image: url('pics/ico/cognitivePsychology.png');
 }
 
-.c-icon.c-interval {
-    background-image: url('pics/ico/interval.png');
+.c-icon.c-healthAnalytics {
+    background-image: url('pics/ico/healthAnalytics.png');
 }
 
-.c-icon.c-static {
-    background-image: url('pics/ico/static.png');
+.c-icon.c-humanFactors {
+    background-image: url('pics/ico/humanFactors.png');
 }
 
-.c-icon.c-dynamic {
-    background-image: url('pics/ico/dynamic.png');
+.c-icon.c-decisionMaking {
+    background-image: url('pics/ico/decisionMaking.png');
 }
 
-.c-icon.c-2D {
-    background-image: url('pics/ico/2D.png');
+.c-icon.c-infoVis {
+    background-image: url('pics/ico/infoVis.png');
 }
 
-.c-icon.c-3D {
-    background-image: url('pics/ico/3D.png');
+.c-icon.c-sciVis {
+    background-image: url('pics/ico/sciVis.png');
+}
+
+.c-icon.c-cyberSecurity {
+    background-image: url('pics/ico/cyberSecurity.png');
+}
+
+.c-icon.c-ubiquitousComputing {
+    background-image: url('pics/ico/ubiquitousComputing.png');
+}
+
+.c-icon.c-aviation {
+    background-image: url('pics/ico/aviation.png');
+}
+
+.c-icon.c-gis {
+    background-image: url('pics/ico/gis.png');
+}
+
+.c-icon.c-medicalScience {
+    background-image: url('pics/ico/medicalScience.png');
+}
+
+.c-icon.c-manufacturing {
+    background-image: url('pics/ico/manufacturing.png');
+}
+
+.c-icon.c-astrophysics {
+    background-image: url('pics/ico/astrophysics.png');
+}
+
+.c-icon.c-urbanPlanning {
+    background-image: url('pics/ico/urbanPlanning.png');
+}
+
+.c-icon.c-management {
+    background-image: url('pics/ico/management.png');
+}
+
+.c-icon.c-transport {
+    background-image: url('pics/ico/transport.png');
+}
+
+.c-icon.c-nonExpert {
+    background-image: url('pics/ico/nonExpert.png');
+}
+
+.c-icon.c-domainExpert {
+    background-image: url('pics/ico/domainExpert.png');
+}
+
+.c-icon.c-data {
+    background-image: url('pics/ico/data.png');
+}
+
+.c-icon.c-model {
+    background-image: url('pics/ico/model.png');
+}
+
+.c-icon.c-tool {
+    background-image: url('pics/ico/tool.png');
+}
+
+.c-icon.c-technique {
+    background-image: url('pics/ico/technique.png');
+}
+
+.c-icon.c-guideline {
+    background-image: url('pics/ico/guideline.png');
+}
+
+.c-icon.c-framework {
+    background-image: url('pics/ico/framework.png');
+}
+
+.c-icon.c-taxonomy {
+    background-image: url('pics/ico/taxonomy.png');
+}
+
+.c-icon.c-survey {
+    background-image: url('pics/ico/survey.png');
 }
 
 .switch-icon {
