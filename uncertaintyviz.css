@@ -168,6 +168,10 @@ h3 a {
     background-image: url('pics/ico/ubiquitousComputing.png');
 }
 
+.c-icon.c-statistics {
+    background-image: url('pics/ico/statistics.png');
+}
+
 .c-icon.c-aviation {
     background-image: url('pics/ico/aviation.png');
 }
@@ -198,6 +202,10 @@ h3 a {
 
 .c-icon.c-transport {
     background-image: url('pics/ico/transport.png');
+}
+
+.c-icon.c-general {
+    background-image: url('pics/ico/general.png');
 }
 
 .c-icon.c-nonExpert {
