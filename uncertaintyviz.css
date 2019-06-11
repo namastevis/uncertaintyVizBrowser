@@ -132,6 +132,10 @@ h3 a {
     background-image: url('pics/ico/technicalReport.png');
 }
 
+.c-icon.c-book {
+    background-image: url('pics/ico/book.png');
+}
+
 .c-icon.c-cartography {
     background-image: url('pics/ico/cartography.png');
 }
@@ -216,32 +220,20 @@ h3 a {
     background-image: url('pics/ico/domainExpert.png');
 }
 
-.c-icon.c-data {
-    background-image: url('pics/ico/data.png');
+.c-icon.c-noEvaluation {
+    background-image: url('pics/ico/noEvaluation.png');
 }
 
-.c-icon.c-model {
-    background-image: url('pics/ico/model.png');
+.c-icon.c-caseStudy {
+    background-image: url('pics/ico/caseStudy.png');
 }
 
-.c-icon.c-tool {
-    background-image: url('pics/ico/tool.png');
+.c-icon.c-userStudy {
+    background-image: url('pics/ico/userStudy.png');
 }
 
-.c-icon.c-technique {
-    background-image: url('pics/ico/technique.png');
-}
-
-.c-icon.c-guideline {
-    background-image: url('pics/ico/guideline.png');
-}
-
-.c-icon.c-framework {
-    background-image: url('pics/ico/framework.png');
-}
-
-.c-icon.c-taxonomy {
-    background-image: url('pics/ico/taxonomy.png');
+.c-icon.c-expertReview {
+    background-image: url('pics/ico/expertReview.png');
 }
 
 .c-icon.c-survey {

@@ -122,6 +122,18 @@ Publication Details
 				<a></a>
 			</div>
 		</div>
+		<div>
+			<div class="category label"><div class="c-icon c-book"></div>Book</div>
+			<div class="category switch switch-toggle switch-holo">
+				<input id="swi_book_want" name="book" type="radio">
+				<label for="swi_book_want" class="switch-icon want"></label>
+				<input id="swi_book_neutral" name="book" type="radio" checked>
+				<label for="swi_book_neutral" class="switch-icon neutral"></label>
+				<input id="swi_book_hide" name="book" type="radio">
+				<label for="swi_book_hide" class="switch-icon hide"></label>
+				<a></a>
+			</div>
+		</div>
 	</div>
 	<div class="category framed">
 		<div class="category caption">Publication Venue</div>
@@ -391,93 +403,52 @@ Publication Details
 </div>
 <div class="filter-group framed">
 	<div class="category framed">
-		<div class="category caption">Source of Uncertainty</div>
+		<div class="category caption">Evaluation Type</div>
 		<div>
-			<div class="category label"><div class="c-icon c-data"></div>Data</div>
+			<div class="category label"><div class="c-icon c-noEvaluation"></div>No Evaluation</div>
 			<div class="category switch switch-toggle switch-holo">
-				<input id="swi_data_want" name="data" type="radio">
-				<label for="swi_data_want" class="switch-icon want"></label>
-				<input id="swi_data_neutral" name="data" type="radio" checked>
-				<label for="swi_data_neutral" class="switch-icon neutral"></label>
-				<input id="swi_data_hide" name="data" type="radio">
-				<label for="swi_data_hide" class="switch-icon hide"></label>
+				<input id="swi_noEvaluation_want" name="noEvaluation" type="radio">
+				<label for="swi_noEvaluation_want" class="switch-icon want"></label>
+				<input id="swi_noEvaluation_neutral" name="noEvaluation" type="radio" checked>
+				<label for="swi_noEvaluation_neutral" class="switch-icon neutral"></label>
+				<input id="swi_noEvaluation_hide" name="noEvaluation" type="radio">
+				<label for="swi_noEvaluation_hide" class="switch-icon hide"></label>
 				<a></a>
 			</div>
 		</div>
 		<div>
-			<div class="category label"><div class="c-icon c-model"></div>Model</div>
+			<div class="category label"><div class="c-icon c-caseStudy"></div>Case Study</div>
 			<div class="category switch switch-toggle switch-holo">
-				<input id="swi_model_want" name="model" type="radio">
-				<label for="swi_model_want" class="switch-icon want"></label>
-				<input id="swi_model_neutral" name="model" type="radio" checked>
-				<label for="swi_model_neutral" class="switch-icon neutral"></label>
-				<input id="swi_model_hide" name="model" type="radio">
-				<label for="swi_model_hide" class="switch-icon hide"></label>
-				<a></a>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="filter-group framed">
-	<div class="category framed">
-		<div class="category caption">Research Contribution</div>
-		<div>
-			<div class="category label"><div class="c-icon c-tool"></div>Tool</div>
-			<div class="category switch switch-toggle switch-holo">
-				<input id="swi_tool_want" name="tool" type="radio">
-				<label for="swi_tool_want" class="switch-icon want"></label>
-				<input id="swi_tool_neutral" name="tool" type="radio" checked>
-				<label for="swi_tool_neutral" class="switch-icon neutral"></label>
-				<input id="swi_tool_hide" name="tool" type="radio">
-				<label for="swi_tool_hide" class="switch-icon hide"></label>
+				<input id="swi_caseStudy_want" name="caseStudy" type="radio">
+				<label for="swi_caseStudy_want" class="switch-icon want"></label>
+				<input id="swi_caseStudy_neutral" name="caseStudy" type="radio" checked>
+				<label for="swi_caseStudy_neutral" class="switch-icon neutral"></label>
+				<input id="swi_caseStudy_hide" name="caseStudy" type="radio">
+				<label for="swi_caseStudy_hide" class="switch-icon hide"></label>
 				<a></a>
 			</div>
 		</div>
 		<div>
-			<div class="category label"><div class="c-icon c-technique"></div>Technique</div>
+			<div class="category label"><div class="c-icon c-userStudy"></div>User Study</div>
 			<div class="category switch switch-toggle switch-holo">
-				<input id="swi_technique_want" name="technique" type="radio">
-				<label for="swi_technique_want" class="switch-icon want"></label>
-				<input id="swi_technique_neutral" name="technique" type="radio" checked>
-				<label for="swi_technique_neutral" class="switch-icon neutral"></label>
-				<input id="swi_technique_hide" name="technique" type="radio">
-				<label for="swi_technique_hide" class="switch-icon hide"></label>
+				<input id="swi_userStudy_want" name="userStudy" type="radio">
+				<label for="swi_userStudy_want" class="switch-icon want"></label>
+				<input id="swi_userStudy_neutral" name="userStudy" type="radio" checked>
+				<label for="swi_userStudy_neutral" class="switch-icon neutral"></label>
+				<input id="swi_userStudy_hide" name="userStudy" type="radio">
+				<label for="swi_userStudy_hide" class="switch-icon hide"></label>
 				<a></a>
 			</div>
 		</div>
 		<div>
-			<div class="category label"><div class="c-icon c-guideline"></div>Guideline</div>
+			<div class="category label"><div class="c-icon c-expertReview"></div>Expert Review</div>
 			<div class="category switch switch-toggle switch-holo">
-				<input id="swi_guideline_want" name="guideline" type="radio">
-				<label for="swi_guideline_want" class="switch-icon want"></label>
-				<input id="swi_guideline_neutral" name="guideline" type="radio" checked>
-				<label for="swi_guideline_neutral" class="switch-icon neutral"></label>
-				<input id="swi_guideline_hide" name="guideline" type="radio">
-				<label for="swi_guideline_hide" class="switch-icon hide"></label>
-				<a></a>
-			</div>
-		</div>
-		<div>
-			<div class="category label"><div class="c-icon c-framework"></div>Framework</div>
-			<div class="category switch switch-toggle switch-holo">
-				<input id="swi_framework_want" name="framework" type="radio">
-				<label for="swi_framework_want" class="switch-icon want"></label>
-				<input id="swi_framework_neutral" name="framework" type="radio" checked>
-				<label for="swi_framework_neutral" class="switch-icon neutral"></label>
-				<input id="swi_framework_hide" name="framework" type="radio">
-				<label for="swi_framework_hide" class="switch-icon hide"></label>
-				<a></a>
-			</div>
-		</div>
-		<div>
-			<div class="category label"><div class="c-icon c-taxonomy"></div>Taxonomy</div>
-			<div class="category switch switch-toggle switch-holo">
-				<input id="swi_taxonomy_want" name="taxonomy" type="radio">
-				<label for="swi_taxonomy_want" class="switch-icon want"></label>
-				<input id="swi_taxonomy_neutral" name="taxonomy" type="radio" checked>
-				<label for="swi_taxonomy_neutral" class="switch-icon neutral"></label>
-				<input id="swi_taxonomy_hide" name="taxonomy" type="radio">
-				<label for="swi_taxonomy_hide" class="switch-icon hide"></label>
+				<input id="swi_expertReview_want" name="expertReview" type="radio">
+				<label for="swi_expertReview_want" class="switch-icon want"></label>
+				<input id="swi_expertReview_neutral" name="expertReview" type="radio" checked>
+				<label for="swi_expertReview_neutral" class="switch-icon neutral"></label>
+				<input id="swi_expertReview_hide" name="expertReview" type="radio">
+				<label for="swi_expertReview_hide" class="switch-icon hide"></label>
 				<a></a>
 			</div>
 		</div>
@@ -531,7 +502,7 @@ Publication Details
 
 					<!-- !!! DO NOT EDIT BELOW ANY CHANGES WILL BE OVERWRITTEN !!! -->
 					<!-- THUMBS START -->
-<div class="tec" data-id="Testing popular visualization techniques for representing model uncertainty" data-categories="journal|cartography|gis|domainExpert|model|technique">
+<div class="tec" data-id="Testing popular visualization techniques for representing model uncertainty" data-categories="journal|cartography|gis|domainExpert">
 	<img class="thumb" src="pics/thumbs/001.png" alt="" />
 	<div class="tec-citation">
 		Aerts&#44; Jeroen CJH; Clarke&#44; Keith C &#x0026; Keuper&#44; Alex D. "<a href="http://dx.doi.org/10.1559/152304003100011180" target="_blank">Testing popular visualization techniques for representing model uncertainty.</a>" Cartography and geographic information science 30.3 (2003): 249-261.
@@ -542,7 +513,7 @@ Publication Details
 	</div>
 	<!-- <div class="tec-keywords"></div> -->
 </div>
-<div class="tec" data-id="Responding to the consequences of uncertainty in geographical data" data-categories="journal|cartography|gis|domainExpert|guideline">
+<div class="tec" data-id="Responding to the consequences of uncertainty in geographical data" data-categories="journal|cartography|gis|domainExpert">
 	<img class="thumb" src="pics/thumbs/002.png" alt="" />
 	<div class="tec-citation">
 		Agumya&#44; Aggrey &#x0026; Hunter&#44; Gary J. "<a href="http://dx.doi.org/10.1080/13658810210137031" target="_blank">Responding to the consequences of uncertainty in geographical data.</a>" International Journal of Geographical Information Science 16.5 (2002): 405-417.
@@ -553,7 +524,7 @@ Publication Details
 	</div>
 	<!-- <div class="tec-keywords"></div> -->
 </div>
-<div class="tec" data-id="Displaying uncertainty in advanced navigation systems" data-categories="conference|humanFactors|aviation|domainExpert|guideline">
+<div class="tec" data-id="Displaying uncertainty in advanced navigation systems" data-categories="conference|humanFactors|aviation|domainExpert">
 	<img class="thumb" src="pics/thumbs/003.png" alt="" />
 	<div class="tec-citation">
 		Andre&#44; Anthony D &#x0026; Cutler&#44; Henry A. "<a href="http://dx.doi.org/10.1177/154193129804200108" target="_blank">Displaying uncertainty in advanced navigation systems.</a>" Proceedings of the Human Factors and Ergonomics Society Annual Meeting. Vol. 42. No. 1. Sage CA: Los Angeles, CA: SAGE Publications, 1998.
@@ -564,7 +535,7 @@ Publication Details
 	</div>
 	<!-- <div class="tec-keywords"></div> -->
 </div>
-<div class="tec" data-id="Being sensitive to uncertainty" data-categories="journal|statistics|domainExpert|data|model|survey">
+<div class="tec" data-id="Being sensitive to uncertainty" data-categories="journal|statistics|domainExpert">
 	<img class="thumb" src="pics/thumbs/004.png" alt="" />
 	<div class="tec-citation">
 		Arriola&#44; Leon M &#x0026; Hyman&#44; James M. "<a href="http://dx.doi.org/10.1109/MCSE.2007.27" target="_blank">Being sensitive to uncertainty</a>" Being sensitive to uncertainty." Computing in Science & Engineering 9.2 (2007): 10.
@@ -575,7 +546,7 @@ Publication Details
 	</div>
 	<!-- <div class="tec-keywords"></div> -->
 </div>
-<div class="tec" data-id="Raindrop plots: a new way to display collections of likelihoods and distributions" data-categories="journal|statistics|general|nonExpert|domainExpert|technique">
+<div class="tec" data-id="Raindrop plots: a new way to display collections of likelihoods and distributions" data-categories="journal|statistics|general|nonExpert|domainExpert">
 	<img class="thumb" src="pics/thumbs/005.png" alt="" />
 	<div class="tec-citation">
 		Barrowman&#44; Nicholas J &#x0026; Myers&#44; Ransom A. "<a href="https://doi.org/10.1198/0003130032369" target="_blank">Raindrop plots: a new way to display collections of likelihoods and distributions.</a>" The American Statistician 57.4 (2003): 268-274.
@@ -586,7 +557,7 @@ Publication Details
 	</div>
 	<div class="tec-keywords">Likelihood interval, Log odds ratio, Meta-analysis, Nonlinear model, Nonnormality, Variable-height plot</div>
 </div>
-<div class="tec" data-id="The effect of display modality on decision-making with uncertainty" data-categories="conference|humanFactors|general|nonExpert|data|technique">
+<div class="tec" data-id="The effect of display modality on decision-making with uncertainty" data-categories="conference|humanFactors|general|nonExpert">
 	<img class="thumb" src="pics/thumbs/download.png" alt="" />
 	<div class="tec-citation">
 		Basapur&#44; Santosh; Bisantz&#44; Ann M &#x0026; Kesavadas&#44; T. "<a href="http://dx.doi.org/10.1177/154193120304700364" target="_blank">The effect of display modality on decision-making with uncertainty.</a>" Proceedings of the Human Factors and Ergonomics Society Annual Meeting. Vol. 47. No. 3. Sage CA: Los Angeles, CA: SAGE Publications, 2003.
@@ -597,7 +568,7 @@ Publication Details
 	</div>
 	<!-- <div class="tec-keywords"></div> -->
 </div>
-<div class="tec" data-id="NCGIA Research Initiative 7 Visualization of Spatial Data Quality" data-categories="technicalReport|cartography|gis|domainExpert|data|model|guideline|framework|survey">
+<div class="tec" data-id="NCGIA Research Initiative 7 Visualization of Spatial Data Quality" data-categories="technicalReport|cartography|gis|domainExpert">
 	<img class="thumb" src="pics/thumbs/007.png" alt="" />
 	<div class="tec-citation">
 		Beard&#44; M Kate; Buttenfield&#44; Barbara P &#x0026; Clapham&#44; Sarah B. "<a href="https://escholarship.org/uc/item/6w1695bs" target="_blank">NCGIA Research Initiative 7 Visualization of Spatial Data Quality: Scientific Report for the Specialist Meeting (91-26).</a>" (1991).
@@ -608,7 +579,7 @@ Publication Details
 	</div>
 	<!-- <div class="tec-keywords"></div> -->
 </div>
-<div class="tec" data-id="Visual access to data quality in geographic information systems" data-categories="journal|cartography|gis|domainExpert|data|guideline">
+<div class="tec" data-id="Visual access to data quality in geographic information systems" data-categories="journal|cartography|gis|domainExpert">
 	<img class="thumb" src="pics/thumbs/008.png" alt="" />
 	<div class="tec-citation">
 		Beard&#44; Kate &#x0026; Mackaness&#44; William. "<a href="http://dx.doi.org/10.3138/C205-5885-23M7-0664" target="_blank">Visual access to data quality in geographic information systems.</a>" Cartographica: The International Journal for Geographic Information and Geovisualization30.2-3 (1993): 37-45.
@@ -619,7 +590,7 @@ Publication Details
 	</div>
 	<!-- <div class="tec-keywords"></div> -->
 </div>
-<div class="tec" data-id="Brushing scatterplots" data-categories="journal|statistics|general|domainExpert|data|technique">
+<div class="tec" data-id="Brushing scatterplots" data-categories="journal|statistics|general|domainExpert">
 	<img class="thumb" src="pics/thumbs/009.png" alt="" />
 	<div class="tec-citation">
 		Becker&#44; Richard A &#x0026; Cleveland&#44; William S. "<a href="https://www.jstor.org/stable/1269768" target="_blank">Brushing scatterplots.</a>" Technometrics 29.2 (1987): 127-142.
@@ -630,7 +601,7 @@ Publication Details
 	</div>
 	<div class="tec-keywords">Multidimensional data, Dynamic graphical methods, Scatterplot matrix, Computer graphics</div>
 </div>
-<div class="tec" data-id="Rangefinder box plots: A note" data-categories="journal|statistics|general|domainExpert|data|technique">
+<div class="tec" data-id="Rangefinder box plots: A note" data-categories="journal|statistics|general|domainExpert">
 	<img class="thumb" src="pics/thumbs/010.png" alt="" />
 	<div class="tec-citation">
 		Becketti&#44; Sean &#x0026; Gould&#44; William. "<a href="https://www.jstor.org/stable/2684233" target="_blank">Rangefinder box plots: A note.</a>" The American Statistician 41.2 (1987): 149-149.
@@ -641,7 +612,7 @@ Publication Details
 	</div>
 	<div class="tec-keywords">Statistical graph, Empirical distribution, Scatterplot, Scatterplot matrix</div>
 </div>
-<div class="tec" data-id="Researchers misunderstand confidence intervals and standard error bars" data-categories="">
+<div class="tec" data-id="Researchers misunderstand confidence intervals and standard error bars" data-categories="journal|cognitivePsychology|general|nonExpert|domainExpert">
 	<img class="thumb" src="pics/thumbs/011.png" alt="" />
 	<div class="tec-citation">
 		Belia&#44; Sarah; Fidler&#44; Fiona; Williams&#44; Jennifer &#x0026; Cumming&#44; Geoff. "<a href="http://dx.doi.org/10.1037/1082-989X.10.4.389" target="_blank">Researchers misunderstand confidence intervals and standard error bars.</a>" Psychological methods 10.4 (2005): 389.
@@ -652,7 +623,7 @@ Publication Details
 	</div>
 	<div class="tec-keywords">confidence intervals, statistical cognition, standard error, error bars, statistical reform</div>
 </div>
-<div class="tec" data-id="Quantitative graphics in statistics: A brief history" data-categories="">
+<div class="tec" data-id="Quantitative graphics in statistics: A brief history" data-categories="journal|statistics|domainExpert">
 	<img class="thumb" src="pics/thumbs/012.png" alt="" />
 	<div class="tec-citation">
 		Beniger&#44; James R &#x0026; Robyn&#44; Dorothy L. "<a href="https://www.jstor.org/stable/2683467" target="_blank">Quantitative graphics in statistics: A brief history.</a>" The American Statistician 32.1 (1978): 1-11.
@@ -663,7 +634,7 @@ Publication Details
 	</div>
 	<div class="tec-keywords">History of statistics, Statistical graphics, Graphical data analysis, Computer graphics, History of science, Cartography in statistics</div>
 </div>
-<div class="tec" data-id="Opening the box of a boxplot" data-categories="">
+<div class="tec" data-id="Opening the box of a boxplot" data-categories="journal|statistics|general|domainExpert">
 	<img class="thumb" src="pics/thumbs/013.png" alt="" />
 	<div class="tec-citation">
 		Benjamini&#44; Yoav. "<a href="https://www.jstor.org/stable/2685133" target="_blank">Opening the box of a boxplot.</a>" The American Statistician 42.4 (1988): 257-262.
@@ -674,7 +645,7 @@ Publication Details
 	</div>
 	<div class="tec-keywords">Density estimation, Dynamic graphics</div>
 </div>
-<div class="tec" data-id="Uncertainty-aware exploration of continuous parameter spaces using multivariate prediction" data-categories="">
+<div class="tec" data-id="Uncertainty-aware exploration of continuous parameter spaces using multivariate prediction" data-categories="conference|infoVis|general|domainExpert">
 	<img class="thumb" src="pics/thumbs/014.png" alt="" />
 	<div class="tec-citation">
 		Berger&#44; Wolfgang; Piringer&#44; Harald; Filzmoser&#44; Peter &#x0026; Gr{\"o}ller&#44; Eduard. "<a href="https://doi.org/10.1111/j.1467-8659.2011.01940.x" target="_blank">Uncertainty‐aware exploration of continuous parameter spaces using multivariate prediction.</a>" Computer Graphics Forum. Vol. 30. No. 3. Oxford, UK: Blackwell Publishing Ltd, 2011.
