@@ -4,7 +4,7 @@ function timeviz() {
     var f_show = {}; // Categories to showing
     var f_hide = {}; // Categories to hide
 
-    var categories = "journal|conference|poster|thesis|technicalReport|book|cartography|cognitivePsychology|healthAnalytics|humanFactors|decisionMaking|infoVis|sciVis|cyberSecurity|ubiquitousComputing|statistics|aviation|gis|medicalScience|manufacturing|astrophysics|urbanPlanning|management|transport|general|nonExpert|domainExpert|noEvaluation|caseStudy|userStudy|expertReview|survey".split("|");
+    var categories = "journal|conference|poster|thesis|technicalReport|book|cartography|cognitivePsychology|healthAnalytics|humanFactors|decisionMaking|infoVis|sciVis|cyberSecurity|ubiquitousComputing|statistics|dataScience|aviation|gis|medicalScience|manufacturing|astrophysics|urbanPlanning|management|transport|general|nonExpert|domainExpert|noEvaluation|caseStudy|userStudy|expertReview|survey".split("|");
 
     var $current_detail_tec;
 

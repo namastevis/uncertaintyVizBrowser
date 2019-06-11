@@ -176,6 +176,10 @@ h3 a {
     background-image: url('pics/ico/statistics.png');
 }
 
+.c-icon.c-dataScience {
+    background-image: url('pics/ico/dataScience.png');
+}
+
 .c-icon.c-aviation {
     background-image: url('pics/ico/aviation.png');
 }
