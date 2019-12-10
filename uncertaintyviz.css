@@ -353,7 +353,7 @@ input:checked + label.hide {
 }
 
 #search {
-    width: 250px;
+    width: 300px;
 }
 
 #clear_search {
