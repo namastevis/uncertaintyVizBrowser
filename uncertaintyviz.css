@@ -354,6 +354,7 @@ input:checked + label.hide {
 
 #search {
     width: 150px;
+    height: auto;
 }
 
 #clear_search {
